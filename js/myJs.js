@@ -16,7 +16,6 @@ const textConfig = {
 
 $(document).ready(function () {
   // process bar
-  var audio = new Audio("sound/nhac.mp3");
   setTimeout(function () {
     firstQuestion();
     $(".spinner").fadeOut();
@@ -49,7 +48,6 @@ $(document).ready(function () {
   // switch button position
   function switchButton() {
     var audio = new Audio("sound/nhac.mp3");
-    
     audio.play();
     var leftNo = $("#no").css("left");
     var topNO = $("#no").css("top");
@@ -62,7 +60,7 @@ $(document).ready(function () {
   }
   // move random button póition
   function moveButton() {
-    var audio = new Audio("sound/nhac.mp3");
+    var audio = new Audio("sound/Swish1.mp3");
     audio.play();
     if (screen.width <= 600) {
       var x = Math.random() * 300;
