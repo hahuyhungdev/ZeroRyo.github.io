@@ -1,2 +1,0 @@
-# ZeroRyo.github.io
-s
