@@ -1,0 +1,76 @@
+.MyProject{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 50px 15px;
+    position: relative;
+    
+    &-title_desc{
+        font-size: 24px;
+        text-align: center;
+    }
+    &-title_heading{
+        text-align: center;
+        font: {
+            size:40px;
+            weight:bold;
+        };
+    }
+    .btn_navigation{
+        text-align: right;
+        margin: 20px;
+        button{
+            padding: 15px 15px;
+            background-color: #1e1e1e;
+            border: 0;
+            color: white;
+            border-radius: 5px;
+            &:active{
+                transition: 0.5s all;
+                background-color: #bcb4b4;
+                color: #1e1e1e;
+            }
+        }
+        .btn-left{
+            margin-right: 10px;
+        }
+        
+    }
+    .container{
+        max-width: 1170px;
+        margin: 30px auto;
+        img{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 20px;
+            margin: 0 auto;
+            padding-bottom: 10px;
+            cursor: none;
+        }
+        .item{
+            text-align: left;
+            padding-top: 20px;
+            &-content{
+                margin-top: 10px;
+                border-radius: 20px;
+                background-color: #1e1e1e;
+                padding: 15px;
+                color: #bcb4b4;
+                &-heading{
+                    font: {
+                        size:18px;
+                        weight:bold;
+                    };
+                    color: white;
+                }
+                &-desc{
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                }
+            }
+        }
+
+    }
+}

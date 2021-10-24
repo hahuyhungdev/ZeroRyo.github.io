@@ -1,0 +1,372 @@
+input:focus{
+    outline: none;
+}
+
+.Checkout_Page{
+    max-width: 1440px;
+    margin: 0 auto;
+    .container{
+        max-width: 1170px;
+        padding: 0 45px 0px;
+        .Block_Header{
+            margin-top: 40px;
+            display: flex;
+            &-FormBuy{
+                &-Info{
+                    width: 658px;
+                    border: 1px solid #D3D7DE;
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                    &-checkbox{
+                        padding: 24px 24px 0px;
+                        label{
+                            margin-left: 7px;
+                        }
+                        #checkbox{
+                            width: 18px;
+                            height: 18px;
+                            background-color: #6B778C;
+                        }
+                    }
+                    &-title{
+                        background-color: #F8F8F8;
+                        padding: 1px 30px;
+                        border-bottom: 1px solid #D3D7DE;
+                        h2{
+                            color: #172B4D;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 24px;
+                            line-height: 36px;
+                            margin-top: 15px;
+                        }
+                    }
+                    &-contact{
+                       padding: 24px 24px;
+                        label{
+                            display: block;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: #6B778C;
+                        }
+                        input{
+                            width: 100%;
+                            background: #FFFFFF;
+                            border: 1px solid #D3D7DE;
+                            box-sizing: border-box;
+                            border-radius: 20px;
+                            padding: 5px 12px;
+                        }
+                    }
+
+                    &-social{
+                        padding-left: 24px;
+                        display: flex;
+                        label{
+                            display: block;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: #6B778C;
+                        }
+                        input{
+                            background: #FFFFFF;
+                            width: 293px;
+                            border: 1px solid #D3D7DE;
+                            box-sizing: border-box;
+                            border-radius: 20px;
+                            padding: 4px 12px;
+                        }
+                        #County{
+                            background: #FFFFFF;
+                            width: 283px;
+                            border: 1px solid #D3D7DE;
+                            box-sizing: border-box;
+                            border-radius: 20px;
+                            padding: 4px 12px;
+                            color: #6B778C;
+                        }
+                        .County{
+                            margin-left: 20px;
+                        }
+                        #City{
+                            background: #FFFFFF;
+                            width: 293px;
+                            border: 1px solid #D3D7DE;
+                            box-sizing: border-box;
+                            border-radius: 20px;
+                            padding: 4px 12px;
+                            color: #6B778C;
+                        }
+                        .Email{
+                            margin-left: 20px;
+                        }
+                    }
+                    .boder{
+                        margin: 24px 24px -1px;
+                    }
+
+                    .boder1{
+                        margin: 0px 24px -1px;
+                    }
+
+                    &-Select{
+                        padding: 24px 24px;
+                        label{
+                            display: block;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: #6B778C;
+                        }
+                        #Ward{
+                            background: #FFFFFF;
+                            width: 293px;
+                            border: 1px solid #D3D7DE;
+                            box-sizing: border-box;
+                            border-radius: 20px;
+                            padding: 4px 12px;
+                            color: #6B778C;
+                        }
+                    }
+
+                    &-DateTime{
+                        display: flex;
+                        .Date{
+                            padding: 24px 24px;
+                            label{
+                                display: block;
+                                color: #6B778C;
+                            }
+                            .inputdate{
+                                width: 293px;
+                                margin-top: 2px;
+                                border: 1px solid #D3D7DE;
+                                border-radius: 20px;
+                                padding: 8px 12px;
+                                input{
+                                    border-radius: 20px;
+                                    padding-left: 10px;
+                                    width: 273px;
+                                    border: 0;
+                                    color: #6B778C;
+                                }
+                                input:focus{
+                                    outline: none;
+                                }
+                            }
+                        }
+                        .Time{
+                            display: flex;
+
+                            &-go{
+                                padding: 24px 24px;
+                                label{
+                                    color: #6B778C;
+                                }
+                                .inputtime{
+                                    margin-top: 2px;
+                                    padding: 6px 8px ;
+                                    border: 1px solid #D3D7DE;
+                                    border-radius: 20px;
+                                    input{
+                                        border-radius: 20px;
+                                        
+                                        
+                                        border: 0;
+                                        color: #6B778C;
+                                    }
+                                    input:focus{
+                                        outline: none;
+                                    }
+                                }
+                                
+                            }
+                            &-back{
+                                padding: 24px 0;
+                                box-sizing: border-box;
+                                label{
+                                    color: #6B778C;
+                                }
+                                .inputtime_back{
+                                    margin-top: 2px;
+                                    padding: 6px 8px ;
+                                    border: 1px solid #D3D7DE;
+                                    border-radius: 20px;
+                                    input{
+                                        border-radius: 20px;
+                                        
+                                        
+                                        border: 0;
+                                        color: #6B778C;
+                                    }
+                                    input:focus{
+                                        outline: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &-TxtArea{
+                        padding: 0 24px;
+                        label{
+                            display: block;
+                            color: #6B778C;
+                        }
+                        textarea{
+                            width: 100%;
+                            height: 120px;
+                            border: 1px solid #D3D7DE;
+                            box-sizing: border-box;
+                            border-radius: 10px;
+                            padding: 10px 10px;
+                        }
+                    }
+
+                    .checkboxadd1{
+                        display: flex;
+                        padding-bottom: 32px;
+                        label{
+                            margin-left: 7px;
+                        }
+                        #checkbox1{
+                            width: 18px;
+                            margin-left: 100px;
+                            height: 18px;
+                            background-color: #6B778C;
+                        }
+                    }
+
+                    .Radiobtn{
+                        padding: 24px 24px;
+                        .Pay{
+                            margin-bottom: 10px;
+                        }
+                    }
+
+                    &-Bank{
+                        background-color: #F8F8F8;
+                        margin: 0px 24px 24px;
+                        border-radius: 4px;
+                        padding: 24px 24px;
+                        display: none;
+                        .desc{
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: #637381;
+                        }
+                        .descc{
+                            color: #172B4D;
+                        }
+                        &-content{
+                            display: flex;
+                            justify-content: space-between;
+                            p{
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 16px;
+                                line-height: 24px;
+                                color: #172B4D;
+                            }
+                            .txt{
+                                font-style: normal;
+                                font-weight: bold;
+                                width: 357px;
+                                font-size: 16px;
+                                line-height: 24px;
+                                color: #172B4D;
+                                // margin-right: auto;
+                            }
+                        }
+                    }
+
+                }
+            }
+           
+
+            &-FormBill{
+                width: 438px;
+                box-sizing: border-box;
+                margin-left: 32px;
+                background-color: #F8F8F8;
+                border-radius: 4px;
+                padding: 32px 24px;
+                    .Title{
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 24px;
+                        line-height: 36px;
+                        color: #172B4D;
+                    }
+                    &-SP{
+                        .NameProduct{
+                            font-weight: bold;
+                            font-size: 18px;
+                            line-height: 26px;
+                            color: #172B4D;
+                        }
+                        .PriceProduct{
+                            display: flex;
+                            &-total{
+                                font-weight: bold;
+                                font-size: 18px;
+                                line-height: 28px;
+                                color: #172B4D;
+                            }
+                            &-Quantity{
+                                margin-left: auto;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 18px;
+                                line-height: 26px;
+                            }
+                        }
+                    }
+                    &-TotalPrice{
+                       display: flex;
+                       &-text{
+                        color: #172B4D;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 16px;
+                        line-height: 20px;
+                       }
+                       &-totalprice{
+                        margin-left: auto;
+                        color: #172B4D;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 18px;
+                        line-height: 28px;
+                       }
+                       .price{
+                           color: #339BB2;
+                       }
+                       .last{
+                           text-transform: uppercase;
+                       }
+                       .lastprice{
+                           color: #339BB2;
+                           font-size: 24px;
+                       }
+                    }
+                    .btn_book{
+                        margin-top: 15px;
+                        width: 400px;
+                        padding: 9px 16px;
+                        background-color: #59C8E0;
+                        border: none;
+                        color: #FFFFFF;
+                        border-radius: 20px;
+                    }
+            }
+        }
+    }
+}

@@ -1,0 +1,309 @@
+// Link Font : 
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
+
+// * Total Page : 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+button{
+    cursor: pointer;
+    font-family: 'Montserrat Alternates';
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Montserrat Alternates';
+    background-color: #262626;
+    color: #FFFFFF;
+    overflow-x: hidden;
+    cursor: none;
+    /* Create the parallax scrolling effect */
+}
+body.acc{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.intro{
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #262626;
+    transition: 1s;
+    &-Logo{
+        position: absolute;
+        width: auto;
+        height: auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        animation: fill 0.5s ease forwards 4s;
+    }
+}
+
+.intro-Logo path:nth-child(1){
+    stroke-dasharray: 562;
+    stroke-dashoffset: 562;
+    animation: line 1.5s ease forwards 0.3s;
+}
+
+.intro-Logo path:nth-child(2){
+    stroke-dasharray: 562;
+    stroke-dashoffset: 562;
+    animation: line 1.5s ease forwards 0.6s;
+}
+
+.intro-Logo path:nth-child(3){
+    stroke-dasharray: 562;
+    stroke-dashoffset: 562;
+    animation: line 1.5s ease forwards 0.9s;
+}
+
+.intro-Logo path:nth-child(4){
+    stroke-dasharray: 562;
+    stroke-dashoffset: 562;
+    animation: line 1.5s ease forwards 1.2s;
+}
+
+.intro-Logo path:nth-child(5){
+    stroke-dasharray: 562;
+    stroke-dashoffset: 562;
+    animation: line 1.5s ease forwards 1.5s;
+}
+
+.intro-Logo path:nth-child(6){
+    stroke-dasharray: 562;
+    stroke-dashoffset: 562;
+    animation: line 1.5s ease forwards 1.8s;
+}
+
+.intro-Logo path:nth-child(7){
+    stroke-dasharray: 562;
+    stroke-dashoffset: 562;
+    animation: line 1s ease forwards 2.1s;
+}
+
+.intro-Logo path:nth-child(8){
+    stroke-dasharray: 562;
+    stroke-dashoffset: 562;
+    animation: line 1.5s ease forwards 2.4s;
+}
+
+.intro-Logo path:nth-child(9){
+    stroke-dasharray: 562;
+    stroke-dashoffset: 562;
+    animation: line 1.5s ease forwards 2.7s;
+}
+
+.intro-Logo path:nth-child(10){
+    stroke-dasharray: 562;
+    stroke-dashoffset: 562;
+    animation: line 1.5s ease forwards 3.0s;
+}
+
+.intro-Logo path:nth-child(11){
+    stroke-dasharray: 562;
+    stroke-dashoffset: 562;
+    animation: line 1.5s ease forwards 3.3s;
+}
+
+.intro-Logo path:nth-child(12){
+    stroke-dasharray: 562;
+    stroke-dashoffset: 562;
+    animation: line 1.5s ease forwards 3.7s;
+}
+
+.intro-Logo path:nth-child(13){
+    stroke-dasharray: 562;
+    stroke-dashoffset: 562;
+    animation: line 1.5s ease forwards 4.0s;
+}
+
+.intro-Logo path:nth-child(14){
+    stroke-dasharray: 562;
+    stroke-dashoffset: 562;
+    animation: line 1.5s ease forwards 4.3s;
+}
+
+.intro-Logo path:nth-child(15){
+    stroke-dasharray: 562;
+    stroke-dashoffset: 562;
+    animation: line 1.5s ease forwards 4.6s;
+}
+
+.intro-Logo path:nth-child(16){
+    stroke-dasharray: 562;
+    stroke-dashoffset: 562;
+    animation: line 1.5s ease forwards 4.9s;
+}
+
+.intro-Logo path:nth-child(17){
+    stroke-dasharray: 562;
+    stroke-dashoffset: 562;
+    animation: line 1.5s ease forwards 5.2s;
+}
+
+.intro-Logo path:nth-child(18){
+    stroke-dasharray: 562;
+    stroke-dashoffset: 562;
+    animation: line 1.5s ease forwards 5.5s;
+}
+path:nth-child(9){
+    stroke-dasharray: 900;
+    stroke-dashoffset: 900;
+}
+@keyframes line {
+    to{
+        stroke-dashoffset: 0;
+    }
+    
+}
+@keyframes fill {
+    from{
+        
+        fill: transparent;
+    }
+    to{
+        
+        background: none;
+        fill:#FFFFFF;
+    }
+    
+}
+.intro.active{
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+.intro.fade{
+    bottom: 10px;
+    opacity: 0;
+    z-index: -1;
+    transition: ease-in-out 0.5s;
+}
+
+.Container{
+    scroll-snap-type: y mandatory;
+    height: 200vh;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.todo{
+    border: 4px solid #FFFFFF;
+}
+
+::-webkit-scrollbar {
+    width:10px;
+    height: 10px;
+ 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+ 
+  border-radius : 50px;
+   
+   background: #1e1e1e; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius : 100rem;
+   background: white; 
+   
+}
+
+//scroll top : 
+
+.scrollTop {
+    position: fixed;
+    top: 500px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    background: #FFFFFF url('/Media/Vector.svg');
+    box-shadow: 0 0px 10px #FFFFFF;
+    border-radius: 50%;
+    background-size: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 4;
+    visibility: hidden;
+    opacity: 0;
+    &:hover{
+        transform: translateY(-20px);
+    }
+    // &::before{
+    //     content: 'Top';
+    //     top: 50%;
+    //     left: 50%;
+    //     position: absolute;
+    //     transform: translate(-50%,-50%);
+    //     font: {
+    //         size: 24px;
+    //         weight : bold;
+    //     };
+    //     color: #1e1e1e;
+    // }
+   
+}
+.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+#cursor{
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: #1e1e1e;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    transition: 0.1s;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    z-index: 99999999999;
+    pointer-events: none;
+    &:hover{
+        background-color: #0099ff;
+    }
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+ 
+  height : 50px;
+}
+
+@import '../layout/header';
+@import '../layout/AboutMe';
+@import '../layout/Skill';
+@import '../layout/MyProject';
+@import '../layout/Contact';
+@import '../layout/Footer';
+@import '../layout/MyResume';
+@import '../layout/About';

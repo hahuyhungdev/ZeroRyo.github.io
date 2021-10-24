@@ -1,0 +1,164 @@
+// < ======================= Setup ========================= >
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish';
+}
+
+body{
+    overflow-x: hidden;
+    background-repeat: no-repeat
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+button{
+    cursor: pointer;
+    font-family: 'Mulish';
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+// < ====================== Biến ======================= > 
+
+@import "./Variables/variables";
+
+// < ======================== Header and Banner ====================== >
+
+@import "./Layout/header&banner";
+
+// < ======================== Menu Product =========================== >
+
+@import "./Layout/MenuProduct";
+
+// < ======================= Reason Page ============================== >
+
+@import "./Layout/ReasonPage";
+
+// < ======================= Feed Back and Partner ==================== >
+@import "./Layout/FeedBack&Partner"; 
+
+// < ======================= Footer =================================== >
+
+@import "./Layout/Footer";
+
+// < ======================= Category =================================== >
+
+@import "./Layout/Category";
+
+// < ======================= ProductDetails =================================== >
+
+@import "./Layout/ProductDetails";
+
+// < ======================= Shoppingcart =================================== >
+
+@import "./Layout/Shoppingcart";
+
+// < ======================= Checkout Page =================================== >
+
+@import "./Layout/Checkout";
+
+
+.Block_Section{
+    max-width: 1440px;
+    margin: 0 auto;
+    .container{
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 0 15px;
+        .Section{
+            img{
+                margin: 50px auto 50px;
+            }
+        }
+        .Block_Bill{
+            width: 568px;
+            height: 447px;
+            border-radius: 4px;
+            margin: 0 auto;
+            background-color:#F8F8F8;
+            &-Title{
+                font-size: 24px;
+                padding-top: 35px;
+                color: #172B4D;
+                text-align: center;
+                font-weight: bold;
+            }
+            .boder{
+                margin: 24px 32px 0px;
+            }
+
+            &-content{
+                display: flex;
+                padding: 0px 32px;
+                p{
+                    font-style: normal;
+                    font-weight: normal;
+                    padding-top: 12px;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #172B4D;
+                }
+                .txt{
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #172B4D;
+                    margin-left: auto;
+                }
+                .Pricetotal{
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: #178EA8;
+                }
+            }
+            &-desc{
+                text-align: center;
+                p{
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #172B4D;
+                    span{
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        .Block_Navigation{
+            text-align: center;
+            margin: 35px 0px;
+            &-btn{
+                padding: 9px 12px;
+                border: 1px solid #D3D7DE;
+                border-radius: 30px;
+                color: #6B778C;
+                box-sizing: border-box;
+                background-color: #FFFFFF;
+            }
+            .btnBuy{
+                background-color: #59C8E0;
+                color: #FFFFFF;
+                margin-left: 20px;
+               
+            }
+            .btnBuy:hover{
+                box-shadow: 0px 0px 10px #59C8E0;
+            }
+        }
+    }
+}

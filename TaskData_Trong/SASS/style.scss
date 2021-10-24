@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish';
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+button{
+    cursor: pointer;
+    font-family: 'Mulish';
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Mulish';
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-x: hidden;
+    background:linear-gradient(120deg, #122B40, #446CB3);
+    
+    
+}
+
+$btn_primary : #0099ff;
+$btn_edit: #FFA800;
+$btn_del : #FF4B4B;
+
+.wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+    .container{
+        max-width: 1170px;
+        margin: 20px auto;
+        padding: 0 100px;
+        background-color: #ffffff;
+        box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.494), 0px 4px 50px rgba(255, 249, 249, 0.467), 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        .header{
+            text-align: center;
+            &-Title{
+                margin: 0 auto;
+                font-size: 40px;
+                // font-family: 'Love Ya Like A Sister';
+                width: 300px;
+                font-weight: bold;
+                text-transform: uppercase;
+                background:linear-gradient(45deg, #005387, #8cb811, #fdb813, #88aca1, #000000, #788cb6);
+                background-size: 200%;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: txtcolor 3s linear infinite;
+            }
+            @keyframes txtcolor {
+                100%{
+                    background-position: 200%;
+                }
+            }            
+        }
+        .boder{
+            width: 150px;
+            margin: 0 auto;
+            background-color: #0099ff;
+            border: 2px solid #0099ff;
+        }
+        .Block_function{
+            display: flex;
+            align-items: center;
+            margin-top: 50px;
+            &-btn{
+                box-sizing: border-box;
+                &-add{
+                    width: 32px;
+                    height: 32px;
+                    padding: 4px 4px;
+                    border-radius: 12px;
+                    border: 0;
+                    background-color: #0099ff;
+                }
+            }
+            &-input{
+                margin-left: 10px;
+                margin-bottom: 5px;
+                padding-left: 10px;
+                background-color: #CCC;
+                border-radius: 20px;
+                svg{
+                    cursor: pointer;
+                }
+                &-search{
+                    border: 0;
+                    padding: 7px 10px 4px;
+                    margin-left: 5px;
+                    background: none;
+                }
+                &-search:focus{
+                    outline: none;
+                }
+            }
+        }
+        .modal,.modal1 {
+            font-family: 'Mulish';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 2;
+            background-color: rgba(0, 0, 0, 0.616);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px;
+          }
+         
+          .modal,.modal1{
+              display: none;
+          }
+          .modal-content {
+            min-height: 350px;
+            transition: 0.2s all;
+            animation: scale 0.3s linear forwards;
+            width: 100%;
+            max-width: 500px;
+            padding: 25px;
+            border-radius: 20px;
+            position: relative;
+            background-color: #fff;
+            h1{
+                font-size: 25px;
+                text-transform: uppercase;
+                text-align: center;
+                font-weight: bold;
+            }
+            // input{
+            //     margin-top: 30px;
+            //     display: block;
+            //     width: 100%;
+            // }
+           
+            &-input{
+                margin-top: 10px;
+                label{
+                    color: rgb(109, 108, 108);
+                    font-weight: bold;
+                }
+                &-children{
+                    width: 100%;
+                    margin-bottom: 10px;
+                    height: 30px;
+                    display: block;
+                    border: 0;
+                    padding-left: 10px;
+                    border-radius: 4px;
+                    background-color: #c9c4c4;
+                }
+                &-children1{
+                    margin-bottom: 10px;
+                    padding-left: 10px;
+                    width: 200px;
+                    height: 30px;
+                    display: block;
+                    border: 0;
+                    border-radius: 4px;
+                    background-color: #c9c4c4;
+                }
+                input:focus{
+                    outline: none;
+                }
+            }
+            .btn{
+                width: 300px;
+                margin: 0 auto;
+
+                &-submit{
+                    padding: 2px 10px;
+                    border: 0;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    border-radius: 4px;
+                    display: block;
+                    color: white;
+                    background-color: #0099ff;
+                    margin-left: 90px;
+                }
+            }
+          }
+          @keyframes scale {
+            0%{
+                opacity: 0.2;
+                transform: scale(0.6);
+            }
+            100%{
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+          .modal-close,.modal-close1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 24px;
+            height: 24px;
+            border-radius: 10rem;
+            background-color: #0099ff;
+            color: white;
+            cursor: pointer;
+          }
+
+        .Table{
+            margin-top: 10px;
+            height: 410px;
+            &-Data{
+                width: 100%;
+                display: block;
+                background-color: #ffffff;
+                border-radius: 12px;
+                box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25), 0px 4px 50px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+                th,td{
+                    padding: 15px;
+                }
+               
+                td{
+                    font-size: 14px;
+                    font-size: 'Mulish';
+                    font-weight: 500;
+                }
+
+               
+                    .selected{
+                        background-color: #c9c4c4;
+                    }
+                
+                tr:hover{
+                    background-color: #c9c4c4;
+                }
+                td:hover{
+                    background-color: #0099ff;
+                    color: #ffffff;
+                }
+                th{
+                    text-align: left;
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+                th:hover{
+                    background-color: #0099ff;
+                }
+                td{
+                    button{
+                        width: 30px;
+                        height: 30px;
+                        background: #FFA800;
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 50px #C4C4C4;
+                        border-radius: 12px;
+                        border: 0;
+                    }
+                    button:hover{
+                        transition: 0.4 all;
+                        transform: scale(1.2);
+                    }
+                    .btn-del{
+                        background-color: #FF4B4B;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

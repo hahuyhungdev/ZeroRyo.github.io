@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" href="musicstyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baumans">
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+</head>
+<body>
+    <div class="container">
+            <div class="container-boxLeft">
+                   <div class="container-boxLeft-menu" id="btndiv" >
+                       <button class="container-boxLeft-menu-item active">US-UK</button>
+                       <button class="container-boxLeft-menu-item">VPOP</button>
+                       <button class="container-boxLeft-menu-item">KPOP</button>
+                   </div>
+                   <div class="song" data-index="0">
+                    <span class="song-index">01</span>
+                    <img
+                      src="Music/loveyour.png"
+                      alt=""
+                      class="song-image"
+                    />
+                    <i class="fa fa-play song-play"></i>
+                    <h4 class="song-title">Love Yourself</h4>
+                    <!-- <h5 class="song-album">Pop King</h5> -->
+                    <time class="song-time">3:49</time>
+                    <label for="love" class="song-love">
+                      <input type="checkbox" name="love" id="love" />
+                      <i class="fa fa-heart song-heart"></i>
+                    </label>
+                  </div>
+                  <!-- ---------------------------02 ------------------------>
+                  <div class="song" data-index="1">
+                    <span class="song-index">02</span>
+                    <img
+                      src="Music/abc.webp"
+                      alt=""
+                      class="song-image"
+                    />
+                    <i class="fa fa-play song-play"></i>
+                    <h4 class="song-title">Where we started</h4>
+                    <!-- <h5 class="song-album">Pop King</h5> -->
+                    <time class="song-time">3:42</time>
+                    <label for="love1" class="song-love">
+                      <input type="checkbox" name="love" id="love1" />
+                      <i class="fa fa-heart song-heart"></i>
+                    </label>
+                  </div>
+            </div>
+            <div class="container-boxRight">
+                <div class="container-boxRight-playermedia">
+                        <img src="Music/loveyour.png" class="container-boxRight-playermedia-playerimg" alt="">
+                </div>
+                <h3 class="container-boxRight-title">
+                        Love YourSelf
+                </h3>
+                <span class="container-boxRight-ast">JustinBiBer</span>
+                <div class="container-boxRight-progress">
+                    <input
+                        type="range"  
+                        id="progress-bar"
+                        min="0"
+                        max=""
+                        value="0"
+                        class="container-boxRight-progress-bar"
+                    />
+                    <audio src="/Music/Loveyour.mp3" id="song"></audio>
+                  </div>
+                  <div class="container-boxRight-player-number">
+                    <span class="player-duration">0:00</span>
+                    <span class="player-remaining">0:00</span>
+                  </div>
+                <div class="player-tool">
+                    <i class="fa fa-backward player-prev"></i>
+                    <i class="fa fa-play player-play"></i>
+                    <i class="fa fa-forward player-next"></i>
+                  </div>
+            </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

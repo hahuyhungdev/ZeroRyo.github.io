@@ -1,0 +1,729 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Inter";
+}
+
+a {
+  text-decoration: none;
+}
+
+.Hero {
+  width: 100%;
+  height: auto;
+  left: 0;
+  top: 0;
+  position: static;
+}
+
+.Hero-header {
+  background-image: url("Media/Background.png");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Hero-header .nav-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 10px;
+  margin-top: 22px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Hero-header .nav-left .logopage {
+  width: 110px;
+  margin: 5px 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Hero-header .nav-left .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Hero-header .nav-left .menu-item {
+  list-style: none;
+  padding: 10px 20px;
+}
+
+.Hero-header .nav-left .menu-item a {
+  color: #18191f;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.Hero-header .nav-left .menu-item a:hover {
+  border-bottom: 1px solid #8c30f5;
+}
+
+.Hero-header .nav-right {
+  margin-left: 150px;
+  margin-top: 30px;
+}
+
+.Hero-header .nav-right .download {
+  width: 120px;
+}
+
+.Hero-content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.Hero-content-title {
+  margin-top: 8rem;
+}
+
+.Hero-content-title .titlehead {
+  font-size: 72px;
+  margin: 25px 0;
+  line-height: 68px;
+}
+
+.Hero-content-title .btn {
+  background-color: #8c30f5;
+  padding: 15px 60px;
+  margin-top: 7px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.Hero-content-title .btn:hover {
+  background-color: #0099ff;
+}
+
+.Hero-content img {
+  max-width: 350px;
+  margin-top: 5rem;
+}
+
+.LogoCloud {
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 142px;
+}
+
+.LogoCloud-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  left: 165px;
+  top: 51em;
+  width: 60em;
+  margin: 0 auto;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+
+.LogoCloud-section .logo {
+  padding: 15px 30px;
+}
+
+.LogoCloud .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: static;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 64px 165px;
+}
+
+.LogoCloud .container-info {
+  position: absolute;
+  top: 58rem;
+}
+
+.LogoCloud .container-info .title {
+  font-size: 48px;
+  line-height: 74px;
+  font-weight: bold;
+}
+
+.LogoCloud .container-info .title-p {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.LogoCloud .container-info-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: static;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.LogoCloud .container-info-list .list {
+  padding: 35px 5px;
+  margin: 24px 0px;
+  width: 350px;
+  line-height: 32px;
+}
+
+.sectionTestimonial {
+  background-color: #d5fafc;
+  height: 896px;
+  position: relative;
+  top: 1500px;
+}
+
+.sectionTestimonial img {
+  position: absolute;
+  margin: 64px 160px;
+}
+
+.sectionTestimonial-des .heading {
+  width: 445px;
+  height: 128px;
+  font-size: 48px;
+  margin: 120px 260px;
+  position: absolute;
+  line-height: 64px;
+}
+
+.sectionTestimonial-des .description {
+  width: 445px;
+  height: 128px;
+  font-size: 18px;
+  margin: 256px 260px;
+  position: absolute;
+  line-height: 32px;
+}
+
+.sectionTestimonial-des .Testimonial1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 32px;
+  position: absolute;
+  width: 300px;
+  height: 468px;
+  left: 355px;
+  top: 312px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+          box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+}
+
+.sectionTestimonial-des .Testimonial1 .testimg {
+  position: static;
+  width: 140px;
+  height: 40px;
+  margin: 32px 0px;
+}
+
+.sectionTestimonial-des .Testimonial1 .testimg1 {
+  position: absolute;
+  margin: 104px 0px;
+}
+
+.sectionTestimonial-des .Testimonial1 .content {
+  position: static;
+  margin: 10px 25px;
+  width: 254px;
+  font-size: 18px;
+  line-height: 32px;
+  height: 255px;
+}
+
+.sectionTestimonial-des .Testimonial1 .Detail {
+  position: static;
+  margin: 10px 25px;
+  width: 254px;
+  font-weight: bold;
+  line-height: 24px;
+  font-size: 18px;
+}
+
+.sectionTestimonial-des .Testimonial1 .Detail span {
+  font-size: 14px;
+  color: #969bab;
+  line-height: 24px;
+}
+
+.sectionTestimonial-des .Testimonial2 {
+  width: 350px;
+  height: 310px;
+  left: 735px;
+  top: 168px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 32px;
+  border-radius: 8px;
+  position: absolute;
+  -webkit-box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+          box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+}
+
+.sectionTestimonial-des .Testimonial2 .testimg {
+  position: static;
+  width: 130px;
+  height: 40px;
+  left: 32px;
+  top: 32px;
+  margin: 0px 0px;
+}
+
+.sectionTestimonial-des .Testimonial2 .testimg2 {
+  position: absolute;
+  margin: 60px 0px;
+}
+
+.sectionTestimonial-des .Testimonial2 .content {
+  position: static;
+  margin: 20px 25px;
+  width: 350px;
+  font-size: 18px;
+  line-height: 32px;
+  height: 128px;
+}
+
+.sectionTestimonial-des .Testimonial2 .Detail {
+  position: static;
+  margin: 10px 25px;
+  width: 254px;
+  font-weight: bold;
+  line-height: 24px;
+  font-size: 18px;
+}
+
+.sectionTestimonial-des .Testimonial2 .Detail span {
+  font-size: 14px;
+  color: #969bab;
+  line-height: 24px;
+}
+
+.sectionTestimonial-des .Testimonial3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: absolute;
+  width: 350px;
+  height: 276px;
+  left: 735px;
+  top: 540px;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+          box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+}
+
+.sectionTestimonial-des .Testimonial3 .testimg {
+  position: static;
+  width: 140px;
+  height: 40px;
+  margin: 32px 20px;
+}
+
+.sectionTestimonial-des .Testimonial3 .testimg3 {
+  position: absolute;
+  margin: 104px 20px;
+}
+
+.sectionTestimonial-des .Testimonial3 .content {
+  position: static;
+  margin: 10px 45px;
+  width: 254px;
+  font-size: 18px;
+  line-height: 32px;
+  height: 255px;
+}
+
+.sectionTestimonial-des .Testimonial3 .Detail {
+  position: static;
+  margin: 10px 45px;
+  width: 254px;
+  font-weight: bold;
+  line-height: 24px;
+  font-size: 18px;
+}
+
+.sectionTestimonial-des .Testimonial3 .Detail span {
+  font-size: 14px;
+  color: #969bab;
+  line-height: 24px;
+}
+
+.SectionStats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 250px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  top: 1600px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.SectionStats-info .title {
+  font-size: 48px;
+  width: 440px;
+  line-height: 64px;
+  padding-left: 165px;
+}
+
+.SectionStats-info .desc {
+  font-size: 18px;
+  line-height: 32px;
+  width: 440px;
+  padding-left: 165px;
+}
+
+.SectionStats-Count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.SectionStats-Count .listcount {
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 20px;
+}
+
+.SectionStats-Count .listcount .info-title {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.PhoneMockup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 600px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  top: 1700px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.PhoneMockup img {
+  width: 540px;
+  height: 540px;
+}
+
+.PhoneMockup .info {
+  width: 440px;
+  height: 200px;
+}
+
+.PhoneMockup .info .Headline {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 32px 0px;
+}
+
+.PhoneMockup .info .des {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.PhoneMockup .info .link {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 32px 0px;
+}
+
+.PhoneMockup .info .link a {
+  color: #8c30f5;
+  font-weight: 700;
+}
+
+.PhoneMockup .info .link a i {
+  margin: 0 10px;
+}
+
+.Single {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 600px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 1800px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Single .heading {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 54px;
+  width: 540px;
+}
+
+.Single p {
+  font-size: 18px;
+  line-height: 32px;
+  width: 540px;
+}
+
+.footerhead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 495px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  top: 1850px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  background-color: #2ec5ce;
+}
+
+.footerhead .content {
+  width: 540px;
+  margin-right: 100px;
+}
+
+.footerhead .content h1 {
+  margin: 8px 0px;
+  font-size: 48px;
+  line-height: 64px;
+}
+
+.footerhead .content .des {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.footerhead .content .contentp {
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 60px;
+  font-weight: 600;
+}
+
+.footerhead .content img {
+  width: 135px;
+  margin-top: 10px;
+}
+
+.footerhead .Phone .phone1 {
+  left: 700px;
+  top: 0px;
+  position: absolute;
+  height: 430px;
+}
+
+.footerhead .Phone .phone2 {
+  position: absolute;
+  left: 960px;
+  bottom: 0px;
+  height: 434px;
+}
+
+.footerbottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 300px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  top: 1850px;
+  position: relative;
+  background-color: #18191f;
+  color: white;
+}
+
+.footerbottom .contentleft {
+  width: 589px;
+  height: 168px;
+  top: 56px;
+}
+
+.footerbottom .contentleft .logo {
+  margin: 54px 24px 25px;
+}
+
+.footerbottom .contentleft .row1 .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footerbottom .contentleft .row1 .menu-item {
+  list-style: none;
+  margin: 10px 24px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.footerbottom .contentleft .row1 .menu-item a {
+  color: white;
+}
+
+.footerbottom .contentleft .row2 .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 489px;
+}
+
+.footerbottom .contentleft .row2 .menu-item {
+  list-style: none;
+  margin: 10px 24px;
+  font-size: 16px;
+  width: 130px;
+  line-height: 26px;
+}
+
+.footerbottom .contentleft .row2 .menu-item a {
+  color: white;
+}
+
+.footerbottom .contentleft .source {
+  line-height: 26px;
+  margin: 14px 24px;
+}
+
+.footerbottom .contentright {
+  width: 160px;
+  margin: 54px 0px;
+}
+
+.footerbottom .contentright img {
+  width: 140px;
+  margin: 14px 0px;
+}
+
+.footerbottom .contentright p {
+  line-height: 28px;
+  font-size: 18px;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */

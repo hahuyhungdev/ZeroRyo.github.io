@@ -1,0 +1,47 @@
+.Contact{
+    max-width: 1170px;
+    margin: 20px auto 40px;
+    padding: 40px 15px;
+    background-color: #1e1e1e;
+    text-align: center;
+    border-radius: 20px;
+    &-title{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    &-btn{
+        padding: 12px 24px;
+        font-weight: bold;
+        border: 0;
+        border-radius: 12px;
+    }
+    &-info{
+        display: flex;
+        justify-content: space-between;
+        &-Compo{
+            padding: 30px 40px;
+            width: 400px;
+            cursor: none;
+            transition: transform 0.5s;
+            .title{
+                text-transform: uppercase;
+                padding-bottom: 10px;
+            }
+            .contact{
+               color: white;
+               padding: 20px 0px;
+            }
+            img{
+                margin: 0 auto;
+            }
+            &:hover{
+                transform: scale(1.2);
+                font-weight: bold;
+                .contact{
+                    color: #0099ff;
+                    cursor: none;
+                }
+            }
+        }
+    }
+}

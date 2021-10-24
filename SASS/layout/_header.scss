@@ -1,0 +1,165 @@
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../Media/background1.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+     background-position: center;
+    scroll-snap-align: start;
+    .overlay{
+        width: 100%;
+        height: 120vh;
+        position: absolute;
+        background-color: #1e1e1e3b;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 2;
+    }
+    .container{
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 0 15px;
+        .Navigation{
+            position: relative;
+            z-index: 4;
+            &-menu{
+                display: flex;
+                justify-content: center;
+                &-item{
+                    padding: 40px;
+                    opacity: 0;
+                    animation: scale 2s linear forwards;
+                    animation-delay: 6.5s;
+                    
+                    &-link{
+                        cursor: none;
+                        color: #FFFFFF;
+                        font: {
+                            size: 20px;
+                        };
+                        position: relative;
+                        padding: 12px 24px;
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            border-bottom: 2.5px solid whitesmoke;
+                            left: 0;
+                            bottom: 20px;
+                            transform: scale(0,0);
+                            transition: transform 0.2s ease;
+                        }
+                        &:hover::after {
+                            transform: scale(1,1);
+                          }
+                    }
+                   
+                }
+            }
+        }
+        @keyframes scale {
+
+            0%{
+                opacity: 0;
+                
+                
+            }
+
+            100%{
+                opacity: 1;
+                
+            }
+            
+        }
+        .header{
+            position: relative;
+            z-index: 3;
+            &-logoPage{
+                img{
+                    max-width: 120px;
+                    margin: 20px auto;
+                    opacity: 0;
+                    animation: scale 2s linear forwards;
+                    animation-delay: 6.5s;
+                }
+            }
+            &-content{
+                margin: 0 auto;
+                padding-top: 40px;
+                text-align: center;
+                &-title{ 
+                    font: {
+                        size:38px;
+                    };
+                    span{
+                        font-weight: bold;
+                    }
+                    margin: 20px auto;
+                    opacity: 0;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    animation: animate 1.5s linear forwards;
+                    border-right: 4px solid #FFFFFF;
+                    animation-delay: 7s;
+                    
+                }
+
+                
+                
+                &-name{
+                    font: {
+                        size:90px;
+                    };
+                    font-weight: bold;
+                    span{
+                        font-family: 'Roboto Mono';
+                        
+                    }
+                    margin: 20px auto;
+                    opacity: 0;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    animation: animate 1.5s linear forwards;
+                    border-right: 4px solid #FFFFFF;
+                    animation-delay: 8s;
+                }
+                @keyframes animate {
+
+                    0%{
+                        height:100%;
+                        width: 0;
+                        
+                    }
+                    100%{
+                        width: 100%;
+                        border: 0;
+                        opacity: 1;
+                    }
+                }
+                &-desc{
+                   
+                    margin: 20px auto;
+                    font: {
+                        size:38px;
+                    };
+                   
+                    span{
+                        font-weight: bold;
+                    }
+
+                    margin: 0 auto;
+                    opacity: 0;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    animation: animate 1.5s linear forwards;
+                    border-right: 4px solid #FFFFFF;
+                    animation-delay: 9s;
+                }
+                
+            }
+        }
+    }
+}

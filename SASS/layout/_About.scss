@@ -1,0 +1,31 @@
+.About{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    img{
+        max-width: 500px;
+        width: 300px;
+        border-radius: 20px;
+    }
+    &-Info{
+        max-width: 500px;
+        width: 450px;
+        line-height: 40px;
+        .txt{
+            font: {
+                size: 20px;
+            };
+            z-index: 2;
+            span{
+                background-color: #1e1e1e;
+                padding: 5px;
+                border-radius: 10px;
+            }
+        }
+        .txtHeading{
+            font-size: 30px;
+            margin: 20px 0px;
+        }
+    }
+}

@@ -1,51 +1,246 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Huy Hùnghg</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HHH - Backend Developer</title>
+    <link rel="stylesheet" href="Reset/Reset.css">
+    <script src="https://kit.fontawesome.com/7d65f38fc8.js"crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="SASS/Style/style.css">
+     <link rel="stylesheet" href="./SASS/Reponsive/reponsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./SASS/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./SASS/owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="shortcut icon" type="image/png" href="Media/Z.ico"/>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/spinload.css">
-    <link rel="stylesheet" type="text/css" href=" https://fonts.googleapis.com/css?family=Pacifico" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
-    <div class="wrapper">
-      <!-- Preloader -->
-    <div id="preloader">
-      <div class="spinner">
-        <div class="rect1"></div>
-        <div class="rect2"></div>
-        <div class="rect3"></div>
-        <div class="rect4"></div>
-        <div class="rect5"></div>
-      </div>
-  </div>
-      <div id="bg"></div>
-      <div class="content">
-        <header>
-          <h2>Bạn Hà có dễ thương không ?? :D</h2>
-          <h4>Suy nghĩ rồi trả lời nàoooo :v </h4>
-        </header>
-        <button id="yes" type="button" class="btn btn-danger btn-lg"> hông có :v </button>
-        <button id="no" type="button" class="btn btn-info btn-lg">cute ơi là cuteee  </button>
-      </div>
-    </div>
+</head>
+<body>
+    <!-- Loading Page -->
+ 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-    <script src="js/myJs.js"></script>
+    <!-- Header Page -->
+            <div  class="scrollTop active" onclick="totop()"></div>
+            <div id="cursor"></div>
+            <div class="wrapper">
+                <div class="overlay"></div>
+                <div class="container">
+                    <nav class="Navigation">
+                        <ul class="Navigation-menu">
+                            <li class="Navigation-menu-item"style="--i:1"><a href="#H" class="Navigation-menu-item-link"  >Home</a></li>
+                            <li class="Navigation-menu-item"style="--i:2"><a href="#A" class="Navigation-menu-item-link" >About Me</a></li>
+                            <li class="Navigation-menu-item"style="--i:3"><a href="#M" class="Navigation-menu-item-link" >My Resume</a></li>
+                            <li class="Navigation-menu-item"style="--i:3"><a href="#P" class="Navigation-menu-item-link" >Project</a></li>
+                            <li class="Navigation-menu-item"style="--i:4"><a href="#D" class="Navigation-menu-item-link" >Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header">
+                        
+                        <div class="header-logoPage"><img src="Media/Z.svg" alt=""></div>
+                        <div class="header-content">
+                            <h1 class="header-content-title"><span>HELLO</span> , MY NAME IS </h1>
+                            <h1 class="header-content-name"><span>H</span> U Y  H U N G</h1>
+                            <h1 class="header-content-desc">I ‘ M <span>BACKEND DEVELOPER</span></h1>
+                            <div class="cc">
+                                <div class="scroll"><img src="Media/scroll.svg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="AboutMe" id="A">
+                <div class="container">
+                    <div class="About_Me">
+                        <div data-aos="zoom-in-up" data-aos-offset="0"  data-aos-duration="1500" data-aos-delay="200" data-aos-easing="ease-in-out" class="About_Me-info"><img class="Avartar" src="Media/hung.jpg" alt=""></div>
+                            <div data-aos="zoom-in-up" data-aos-offset="0"  data-aos-duration="500" data-aos-delay="200" data-aos-easing="ease-in-out" class="About_Me-Content">
+                                <p class="title-desc">Let me introduce myself !</p>
+                                <h1 class="Title"><span class="Title-z">About Me</span></h1>
+                                <p class="desc">
+                                    I ‘ m a Backend Developer  .  I ‘ m currently working at Ha Thanh Trade as Backend Developer ,I love working with data, responding to data and how it works. I use ReactJs && NodeJs Framework for JS to create stunning UI and have a good user experience
+                                </p>
+                                <a href="./Media/Cv_MinhThuan_ENG.pdf"><button class="btn btn-primary">My Cv</button></a>
+                                <form action="https://github.com/zeroryo" style="
+                                /* inset-block: auto; */
+                                display: inline-block;
+                            ">
+                                                            <button class="btn btn-second">Contact Me</button>
+                                                        </form>
+                            </div>
+                    </div>
+                </div>
+            </section>
+            <section id="M" class="My_Resume">
+                <div class="My_Resume-Title">
+                    <p class="Title">My Resume</p>
+                </div>
+                <div class="My_Resume-Content" data-aos="fade-right" data-aos-offset="0"  data-aos-duration="1500" data-aos-delay="200" data-aos-easing="ease-in-out">
+                    <div  class="Block Exper">
+                        <p class="Block-title">Expertise</p>
+                        <p class="Block-position"> <i class="fas fa-share"></i> Backend Developer</p>
+                        <p class="Block-time"> + 05/05/2021 - 10/07/2021</p>
+                        <p class="Block-position"> <i class="fas fa-share"></i> Company</p>
+                        <p class="Block-time"> + Ha Thanh Trade And Sevice Company</p>
+                        <p class="Block-position"> <i class="fas fa-share"></i> Responsiblities</p>
+                        <ul class="Block-languages">
+                            <li class="Programming">+ Code ( HTML / CSSS - JS / Jquery)</li>
+                            <li class="Programming">+ Support staff with computer problems </li>
+                        </ul>
+                    </div>
+                    <div  class="Block Education">
+                        <p class="Block-title">Education</p>
+                        <p class="Block-position"> <i class="fas fa-share"></i>  Ton Duc Thang University</p>
+                        <p class="Block-time"> + Infomation Technology </p>
+                        <p class="Block-time"> + 2019- Now</p>
+                        <p class="Block-position"> <i class="fas fa-share"></i>  Achievements</p>
+                        <ul class="Block-languages">
+                            <li class="Programming">+ GPA : 3.2/ 4</li>
+                            <li class="Programming"> </li>
+                        </ul>
+                    </div>
+                    <div  class="Block Technology">
+                        <p class="Block-title">Skill</p>
+                        <p class="Block-position"> <i class="fas fa-share"></i>  Programming Languages</p>
+                        <ul class="Block-languages">
+                            <li class="Programming">+ HTMLL/CSS</li>
+                            <li class="Programming">+ JAVASCRIPIT</li>
+                            <li class="Programming">+ JQUERY</li>
+                            <li class="Programming">+ REACTJS</li>
+                            <li class="Programming">+ NODEJS</li>
+                        </ul>
+                       
+                    </div>
+                </div>
+            </section>
+            <section class="Skill">
+                <p data-aos="zoom-in-up" data-aos-offset="0"  data-aos-duration="500" data-aos-delay="200" data-aos-easing="ease-in-out" class="Skill-desc">What will I do for you</p>
+                <h2 data-aos="zoom-in-up" data-aos-offset="0"  data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-in-out" class="Skill-heading">WEB SERVICES</h2>
+                <div class="container">
+                    <div data-aos="zoom-in-up" data-aos-offset="0"  data-aos-duration="300" data-aos-delay="500" class="Skill_Webdesign">
+                        <img class="Skill_Webdesign-icons" src="Media/webdesign.svg" alt="">
+                        <p class="Skill_Webdesign-title">Web LandingPage</p>
+                        <p class="Skill_Webdesign-Title">Website introduces your projects, products or company to the world community, in a full and best way. </p>
+                    </div>
+                    <div data-aos="zoom-in-up" data-aos-offset="0"  data-aos-duration="300" data-aos-delay="1000" class="Skill_Webdesign">
+                        <img class="Skill_Webdesign-icons" src="Media/webdev.svg" alt="">
+                        <p class="Skill_Webdesign-title">Web E-commerce</p>
+                        <p class="Skill_Webdesign-Title">Website according to SEO standards on e-commerce, will help you in managing your business model</p>
+                    </div>
+                    <div data-aos="zoom-in-up" data-aos-offset="0"  data-aos-duration="300" data-aos-delay="1000" class="Skill_Webdesign">
+                        <img class="Skill_Webdesign-icons" src="Media/Frame.svg" alt="">
+                        <p class="Skill_Webdesign-title">Web Dasboard</p>
+                        <p class="Skill_Webdesign-Title">Dashboard will help you manage your resources in the best way with accurate statistics </p>
+                    </div>
+                </div>
+            </section>
+            <section id="P" class="MyProject">
+                <p class="MyProject-title_desc">Some of my recent works</p>
+                <h2 class="MyProject-title_heading">Projects</h2>
+                <div class="btn_navigation">
+                    <button class="btn-left">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="btn-right">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="container">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <a href="https://ZeroRyo.github.io/FoodSpin/"><img src="/Media/download.png" alt="" srcset=""></a>
+                            <div class="item-content">
+                                <p class="item-content-heading">FoodSpin</p>
+                                <p class="item-content-desc">It is a non vegetarian salad which consists of the green goddess dressing mixed with chicken, peppers, olives and celery.
+                                </p>
+                            </div>
+                        </div>
 
-  </body>
-  
+                       
+
+                        <div class="item">
+                            <a href="https://ZeroRyo.github.io/FruitSalad/"><img src="Media/Thumbnail.png" alt="" srcset=""></a>
+                            <div class="item-content">
+                                <p class="item-content-heading">JEZ SALAD</p>
+                                <p class="item-content-desc">Jez Salad is the pioneer of healthy fruit salad with high nutrition</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product"><a href="https://ZeroRyo.github.io/Thuanvm/"><img src="Media/opt2.png" alt="" srcset=""></a></div>
+                            <div class="item-content">
+                                <p class="item-content-heading">MocFlowers</p>
+                                <p class="item-content-desc ">Với nhiều năm kinh nghiệm phục vụ trong ngành điện hoa, Mộc Flowers chúng tôi luôn cố gắng để tạo ra những sản phẩm tốt nhất, đa dạng nhất phục vụ cho mọi nhu cầu của khách hàng.</p>
+                            </div>
+                        </div>
+
+                        <a href="https://ZeroRyo.github.io/Todolist/">
+                            <div class="item">
+                                <img class="todo" src="/Media/Capture.PNG" alt="" srcset="">
+                                <div class="item-content">
+                                    <p class="item-content-heading">To Do List</p>
+                                    <p class="item-content-desc">A to-do list app lets you do all that much more efficiently, dragging and tasks to reorder them, </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://ZeroRyo.github.io/Form/">
+                            <div class="item">
+                                <img class="todo" src="/Media/Form.png" alt="" srcset="">
+                                <div class="item-content">
+                                    <p class="item-content-heading">Dasboard Student</p>
+                                    <p class="item-content-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veniam, cupiditate fugiat obcaecati perspiciatis officia non veritatis, repudiandae iusto quibusdam itaque at temporibus ad quasi quod nam vero, nihil sint.</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="item">
+                            <a href="https://ZeroRyo.github.io/MenuList/"><img class="todo" src="/Media/ac.PNG" alt="" srcset=""></a>
+                            <div class="item-content">
+                                <p class="item-content-heading">MenuList</p>
+                                <p class="item-content-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore minus nisi eum voluptate cum culpa vitae eius! Quibusdam aliquid quod non harum totam alias eos? Voluptates nulla perferendis aut tempore.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="D" class="Contact">
+                <p class="Contact-desc">Have a project in mind</p>
+                <p class="Contact-title">Let me help you</p>
+                <div class="Contact-info">
+                    <div class="Contact-info-Compo">
+                        <img src="Media/IconsPhone.svg" alt="">
+                        <p class="title">Phone</p>
+                        <a class="contact" href="tel:0776156790">
+                            +84 335 128 670
+                        </a>
+                    </div>
+                    <div class="Contact-info-Compo">
+                        <img src="Media/IconsEmail.svg" alt="">
+                        <p class="title">Email</p>
+                        <a class="contact" href="mailto:hahuyhungthpttanhlinh@gmail.com">hahuyhungthpttanhlinh</a>
+                    </div>
+                    <div class="Contact-info-Compo">
+                        <img src="Media/IconsLocation.svg" alt="">
+                        <p class="title">Location</p>
+                        <a class="contact" href="">KTX TDTU - 21 Nguyen Huu Tho, Q.7- TPHCM</a>
+                    </div>
+                </div>
+                <button class="Contact-btn">Contact Me</button>
+            </section>
+            <footer class="Footer">
+                <div class="container">
+                    <p class="desc">Page design by</p>
+                    <p class="name"><span>H A H U Y H U N G</span></p>
+                    <p class="desc">Thanks You For Visting </p>
+                    <p class="desc"><i class="fa fa-heart" aria-hidden="true"></i></p>
+                </div>
+            </footer>
+        
+    <script src="./JS/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./JS/jquery.min.js"></script>
+    <script src="./SASS/owlcarousel/owl.carousel.min.js"></script>
+    <script src="./JS/Owl.js"></script>
+    <script src="./JS/index.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
 </html>

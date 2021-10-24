@@ -1,0 +1,252 @@
+.cartShop{
+    max-width: 1440px;
+    margin: 0 auto;
+    .container{
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 0 45px;
+        .number-product{
+            margin-top: 40px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 20px;
+            color: #178EA8;
+            span{
+                font-weight: bold;
+                font-size: 17px;
+            }
+        }
+        .cartProduct{
+            display: flex;
+            &-Cart{
+                display: flex;
+                flex-wrap: wrap;
+                width: 668px;
+                img{
+                    width: 170px;
+                    height: 170px;
+                    border-radius: 4px;
+                    padding-bottom: 10px;
+                }
+                .info_cart{
+                    padding-left: 32px;
+                    &-namecart{
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 18px;
+                        line-height: 26px;
+                        color: #172B4D;
+                    }
+                    &-price{
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 18px;
+                        margin-top: 16px;
+                        line-height: 26px;
+                        color: #178EA8;
+                    }
+                    &-function{
+                        display: flex;
+                        margin-top: 40px;
+                        button{
+                            border: 0;
+                            background: #FFFFFF;
+                            text-align: center;
+                            color: #178EA8;
+                            font-size: 14px;
+                            font-weight: bold;
+                        }
+                        .boder{
+                            width: 1px;
+                            background-color: #D3D7DE;
+                            margin-left: 10px;
+                        }
+                        .add{
+                            margin-left: 10px;
+                        }
+                    }
+                }
+                .UpandDown{
+                    display: flex;
+                    margin-left: 50px;
+                    button{
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 4px;
+                        background: #FFFFFF;
+                        border: 1px solid #D3D7DE;
+                        box-sizing: border-box;
+                        border-radius: 4px;
+                        
+                    }
+                   .SL{
+                       margin-left: 8px;
+                       margin-right: 8px;
+                       text-align: center;
+                       padding-top: 3px;
+                       border-radius: 4px;
+                       width: 32px;
+                       height: 32px;
+                       background: #FFFFFF;
+                       border: 1px solid #D3D7DE;
+                       box-sizing: border-box;
+                       border-radius: 4px;
+                   }
+                }
+            }
+          
+            &-Bill{
+                margin-left: 32px;
+                width: 400px;
+                background-color: #F8F8F8;
+                border-radius: 4px;
+                padding: 24px 24px;
+                &-title{
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: #172B4D;
+                }
+                &-content{
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 20px;
+                    margin-top: 24px;
+                    color: #172B4D;
+                }
+                &-sale{
+                    .inputsale{
+                        width: 247px;
+                        border-radius: 20px;
+                        border: 1px solid #D3D7DE;
+                        padding: 5px 10px;
+                    }
+                    .inputsale:focus{
+                       outline: none;
+                    }
+                    .acept{
+                        margin-left: 5px;
+                        border: 0;
+                        padding: 9px 12px;
+                        border-radius: 20px;
+                        background: #59C8E0;
+                        color: #FFFFFF;
+                    }
+                    .acept:hover{
+                        box-shadow: 0px 0px 10px #59C8E0;
+                    }
+                }
+                .boder-Bill{
+                    background-color: #D3D7DE;
+                }
+                &-Total{
+                    display: flex;
+                    p{
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 16px;
+                        line-height: 20px;
+                        margin-top: 10px;
+                        color: #172B4D;
+                    }
+                    .Price{
+                        margin-left: auto;
+                        font-size: 18px;
+                    }
+                }
+                &-PriceSale{
+                    display: flex;
+                    P{
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 16px;
+                        line-height: 20px;
+                        margin-top: 5px;
+                        color: #172B4D;
+                    }
+                    .Price{
+                        margin-left: auto;
+                    }
+                }
+                &-PriceTotal{
+                    display: flex;
+                    P{
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 16px;
+                        line-height: 20px;
+                        margin-top: 5px;
+                        color: #172B4D;
+                    }
+                    .Title{
+                        text-transform: uppercase;
+                    }
+                    .Price{
+                        margin-left: auto;
+                        font-weight: bold;
+                        font-size: 24px;
+                        color: #178EA8;
+                    }
+                }
+                .btn-Total{
+                    width: 350px;
+                    margin-top: 17px;
+                    padding: 9px 16px;
+                    border-radius: 5px;
+                    text-align: center;
+                    background-color: #59C8E0;
+                    color: #FFFFFF;
+                    border: 0;
+                }
+                .btn-Total:hover{
+                    box-shadow: 0px 0px 10px #59C8E0;
+                }
+            }
+        }
+    }
+}
+
+.Related-products{
+    .logopartner{
+        .itemse{
+            .logo-details{
+                display: flex;
+                img{
+                    width: 162px;
+                    height: 162px;
+                }
+                .info{
+                    .NameProduct{
+                        font-size: 18px;
+                        font-weight: bold;
+                        color: #172B4D;
+                      }
+                      .price{
+                        color: #178EA8;
+                        font-weight: bold;
+                      }
+                      .booking{
+                        padding: 9px 16px;
+                        background-color: #59C8E0;
+                        border-radius: 30px;
+                        border: 0;
+                        color: white;
+                        i{
+                            margin-left: 10px;
+                        }
+                      }
+                      .booking:hover{
+                          background-color: #0099ff;
+                          .book{
+                              transition: 0.5s all;
+                              padding-right: 20px;
+                          }
+                      }
+                }
+            }
+        }
+    }
+}

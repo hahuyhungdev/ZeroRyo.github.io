@@ -1,0 +1,46 @@
+.Skill{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 100px 15px;
+    &-desc{
+        font: {
+            size: 24px;
+            weight : 300;
+        }
+        text-align: center;
+    }
+    &-heading{
+        font: {
+            size: 40px ;
+            weight :bold;
+        };
+        text-align: center;
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+        .Skill_Webdesign{
+            text-align: center;
+            &-icons{
+                margin: 0 auto;
+            }
+            &-title{
+                font: {
+                    size: 30px;
+                    // weight:bold;
+                };
+            }
+            &-Title{
+                max-width: 300px;
+                padding-top: 20px;
+                font: {
+                    size: 16px;
+                    weight : 500;
+                };
+            }
+
+            
+        }
+     }
+  }
